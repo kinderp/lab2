@@ -62,3 +62,18 @@ nav ul li {
   display: inline; /* show li items orizontally and remove bullet points */
   margin: 0 5px 0 5px;
 }
+
+main {
+  background-image: url("images/background.png");
+  /* we don't want header and footer bars
+   * overlap main-content area, let's add
+   * some padding
+   */
+  padding-top: 3em;
+  padding-bottom: 3em;
+  /* We need to set min-height for main-content
+   * because of in pages with no content or less
+   * footer will gain spaces left by main-content
+   */
+  min-height: 85%;
+}
