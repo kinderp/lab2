@@ -1,0 +1,21 @@
+h1 {
+	font-size: 3em;
+	margin-top: 0.5em;
+}
+
+/* In small portrait  orientation
+ * pie image ( banner )  and logo
+ * don't resize correctly showing
+ * gray body background.
+ */
+
+.logo {
+	max-width: 100%;
+}
+
+.sub-title {
+	background-color: #fff; /* white */
+	font-size: 1.5em;
+	padding: 10px;
+
+}
