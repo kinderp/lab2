@@ -94,3 +94,16 @@ aside {
 article {
   width: 75%;
 }
+
+/* this media query will be applied only
+ * for screen with width 768 or wider
+ */
+@media only screen and (min-width: 768px) {
+  main {
+    display: flex;
+  }
+  
+  aside {
+    padding-left: 2%;
+  }
+}
