@@ -1,0 +1,33 @@
+/*
+ * Let's use * (star selector) in order to reset
+ * default css rules set by chrome
+ */
+
+* {
+  margin: 0;
+}
+
+/*
+ * I want body tag takes 100% of the page
+ * doing something like that:
+ * body { height: 100%; }
+ * doesn't work because inheritances from
+ * its parent (body tag) so we need to set
+ * body too and then body will inheritance
+ * from its parent viewport that has 100%
+ */
+html,
+body {
+  height: 100%;
+}
+
+/* I will apply a background image for my
+ * body   but at the bottom of the page I
+ * will   add a footer so setting bg body
+ * color  I am implicitly setting footer
+ * color
+ */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #999; /* light gray */
+}
