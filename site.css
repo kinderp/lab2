@@ -47,3 +47,18 @@ header {
   background-color: #a493c0;
   padding: 10px;
 }
+
+/* 
+ * The :visited selector is used to select visited links
+ * The :link selector is used to select  unvisited links
+ */
+nav a:visited,
+nav a:link {
+  color: #fff; /* white */
+  text-decoration: none; /* remove underscores */
+}
+
+nav ul li {
+  display: inline; /* show li items orizontally and remove bullet points */
+  margin: 0 5px 0 5px;
+}
