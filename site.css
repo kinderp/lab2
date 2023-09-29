@@ -95,6 +95,15 @@ article {
   width: 75%;
 }
 
+/* class columuns is a div containing
+ * name and price of a single pie, we
+ * want this two tags in the same row
+ * but in separate columuns.Let's use
+ * display: flex for that.*/
+.columns {
+	display: flex;
+}
+
 /* this media query will be applied only
  * for screen with width 768 or wider
  */
@@ -106,4 +115,12 @@ article {
   aside {
     padding-left: 2%;
   }
+
+  /* In a desktop layout wa wanna our pies stacked
+   * together in columns while for a mobile layout
+   * we want those stacked one on top of another.
+   */
+   .columns-desktop {
+	display: flex;
+   }
 }
