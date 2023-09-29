@@ -19,7 +19,50 @@
     <main>
       <aside><img class="logo" src="images/logo_caristia.png" alt="Caristia's Pie Shop" /></aside>
         <article>
-          
+          <h1>Pies</h1>
+            <!-- class columuns-desktop will be used to apply some style for desktop specific layout -->
+            <section class="columns-desktop">
+              
+              <!-- class pie will be used to apply the same style to all the pies in the page -->
+              <div class="pie">
+                <!--
+                    +-------------------------------+
+                    |                               |
+                    |            image              |
+                    |                               |
+                    |                               |
+                    +---------------+---------------+
+                    |    title      |     price     | 
+                    +---------------+---------------+
+                    |    Pies description (p tag)   |
+                    +----------+--------------------+
+                    |  button  |
+                    +----------+
+                -->
+                <img src="images/apple-pie.png" alt="Apple Pie" />
+                <!-- we need a div with class columuns in order to arrange
+                     title and price in the same row in different  columns -->
+                <div class="columns">
+                  <div class="title">Apple Pie</div>
+                  <div class="price">€12.95</div>
+                </div>
+                <p class="desc">Our famous apple pie</p>
+                <!--  data-* attributes allow us to store extra information on standard HTML elements
+                      data-order will contain info about selected order in our interactive page   -->
+                <button data-order="apple-pie">Order</button>
+              </div>
+
+              <div class="pie">
+                <img src="images/cherry-pie.png" alt="Chery Pie" />
+                <div class="columns">
+                  <div class="title">Cherry Pie</div>
+                  <div class="price">€15.95</div>
+                </div>
+                <p class="desc">A summer classic!</p>
+                <button data-order="cherry-pie">Order</button>
+              </div>
+            
+            </section>
         </article>
     </main>
     <footer>
