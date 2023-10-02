@@ -1,3 +1,12 @@
+/* in a desktop layout we don't want that input and label inside article tag 
+ * take all parent's wiwth
+*/
+@media only screen and (min-width: 768px) {
+    article {
+        width: 350px;
+    }
+}
+
 .input-group {
     margin: 20px;
 }
@@ -27,4 +36,9 @@ input[type="submit"] {
     border: solid 1px #999;
     border-radius: 3px;
     padding: 10px; /* use the same padding of other input-group items */
+}
+
+
+.pie {
+	width: 100%;
 }
