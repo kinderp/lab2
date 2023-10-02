@@ -34,6 +34,7 @@
             <form action="http://localhost:8888/" method="get">
 
               <input type="hidden" name="pie-order" id="pie-order">
+              <input type="hidden" name="location" id="location">
               
               <div class="input-group">
                   <div><label for="first-name">First Name</label></div>
@@ -84,6 +85,25 @@
   </body>
   <script>
     window.addEventListener("DOMContentLoaded", function(e){
+        let locationBox = document.querySelector("#location");
+        
+        let location = {
+          latitude: "unknown",
+          longitude: "unknown",
+        }
+
+        window.navigator.geolocation.getCurrentPosition(
+          function(position) {
+            location.latitude = position.coords.latitude;
+            location.longitude = position.coords.longitude;
+
+            locationBox.value = JSON.stringify(location);
+          },
+          function(error) {
+            locationBox.value = JSON.stringify(location);
+          }
+        );
+
         const order = localStorage.getItem("order");
 
         if (order) {
@@ -91,7 +111,7 @@
 
             const orderInput = document.querySelector("#pie-order");
             orderInput.value = order;
-            
+
             const pie = document.querySelector(".pie");
 
             const title = pie.querySelector(".title");
